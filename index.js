@@ -9,8 +9,6 @@ const loadtemperature = city => {
 
 const LoadCurrentTemperature = data => {
   console.log(data)
-  // const CurrentTemperature=document.getElementById('temp')
-  // CurrentTemperature.innerText=data.main.temp;
   SetInnerTextBy('temp', data.main.temp);
   SetInnerTextBy('conditions', data.weather[0].main)
 
